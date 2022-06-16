@@ -119,6 +119,36 @@ namespace Implementation_ALgo
 			}
 		}
 
+		static public int Partition(List<int> list, int start, int end, int pivot) 
+		{
+			int i = start +1;
+			int j = end;
+			int ValuePivot = list[pivot];
+
+			while ( i < j) 
+			{
+				while ((i < j) && (list[i] < ValuePivot)) 
+				{
+					return ++i;
+				}
+				while ((i < j) && (list[j] > ValuePivot)) 
+				{
+					return --j;
+				}
+				while ()
+			}
+
+		}
+
+		static private void Swap(List<int> liste, int lhs, int rhs)
+		{
+			int tmp = liste[lhs];
+			liste[lhs] = liste[rhs];
+			liste[rhs] = tmp;
+		}
+
+
+
 		static void Main(string[] args)
 		{
 			// print result FirstEquation
